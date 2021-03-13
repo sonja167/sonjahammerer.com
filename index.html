@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fancybox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="img/logo_black.svg"
+      sizes="any"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/bc5b63a928.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Sonja Hammerer</title>
+  </head>
+
+  <body>
+    <!--------------------------------------------------------------------------------
+    Jumbotron ----------------------------------------------------------------------->
+    <div class="jumbotron jumbotron-fluid myjumbotron">
+      <div class="container h-100">
+        <div
+          class="row h-100 align-items-center flex-column justify-content-center"
+        >
+          <img src="img/logo.svg" alt="Logo" style="max-width: 200px" />
+          <h1 id="claim" data-i18n="claim" class="text-center">
+            GRAPHIC DESIGN & HANDICRAFTS
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------
+    Fixed Nav Bar ------------------------------------------------------------------->
+    <nav id="header" class="navbar scrolling-navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/schriftzug.svg" style="width: 300px" alt="Logo" />
+          </a>
+
+          <button id="openNav" class="d-lg-none mytoggler">
+            <span><i class="fas fa-bars"></i></span>
+          </button>
+        </div>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#about"
+                id="navabout"
+                data-i18n="navabout"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#surroundings"
+                id="navsurroundings"
+                data-i18n="navsurroundings"
+                >IMPRESSIONS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#contact"
+                id="navcontact"
+                data-i18n="navcontact"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Nav Bar ------------------------------------------------------------------->
+        <section>
+          <!-- The overlay -->
+          <div id="mobileNav" class="navoverlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" id="closeNav"
+              >&times;</a
+            >
+
+            <!-- Overlay content -->
+            <div class="navoverlay-content">
+              <a
+                id="mobilelinkabout"
+                class="mobilelink"
+                data-i18n="navabout"
+                href="#about"
+                >ABOUT</a
+              >
+              <a
+                id="mobilelinksurroundings"
+                class="mobilelink"
+                href="#surroundings"
+                data-i18n="navsurroundings"
+                >IMPRESSIONS</a
+              >
+              <a
+                id="mobilelinkcontact"
+                data-i18n="navcontact"
+                class="mobilelink"
+                href="#contact"
+                >CONTACT</a
+              >
+            </div>
+          </div>
+        </section>
+        <!-- Mobile Nav Bar End ------------------------------------------------------------------->
+      </div>
+    </nav>
+
+    <!--------------------------------------------------------------------------------
+    About Section ----------------------------------------------------------------------->
+    <div class="container-fluid abschnitt mycards" id="about">
+      <h1 data-i18n="h1about" class="text-center">ABOUT</h1>
+
+      <!--------------------------------------------------------------------------------
+    Cards ------------------------------------------------------------------->
+      <section class="d-flex justify-content-center text-center">
+        <section class="row">
+          <div class="card col-lg-4 align-items-center">
+            <img
+              src="img/004-idea.png"
+              class="card-img-top"
+              style="max-width: 200px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="card-title">Graphic Design</h3>
+              <p class="card-text">
+                Graphic Design is my passion. I look forward to design cards,
+                brochures, flyers, folders and more according to your wishes.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card col-lg-4 align-items-center">
+            <img
+              src="img/005-plant pot.png"
+              class="card-img-top"
+              style="max-width: 200px"
+              alt="Handicrafts"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Handicrafts</h3>
+              <p class="card-text">
+                I love to create beautiful things out of different materials,
+                meant to make life a little more colourful.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card col-lg-4 align-items-center">
+            <img
+              src="img/026-website.png"
+              class="card-img-top"
+              style="max-width: 200px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="card-title">Copywriting</h3>
+              <p class="card-text">
+                Words inspire me to be creative too. I have experience in
+                journalism and corporate communications.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+
+    <!--------------------------------------------------------------------------------
+    Surroundings ----------------------------------------------------------------------->
+    <div class="container abschnitt" id="surroundings">
+      <h1 data-i18n="h1surroundings" class="text-center">IMPRESSIONS</h1>
+      <p data-i18n="textsurroundings" class="text-center"></p>
+    </div>
+
+    <!-- Fancybox-->
+    <div class="container-fluid">
+      <!-- Row 1 -->
+      <section class="row">
+        <!-- Photo 1 -->
+        <div class="col-lg-3 col-md-6 p-0 surroundingbox">
+          <a href="img/ribadeando.jpg" class="surroundingcontent" data-fancybox>
+            <img class="img-fluid" src="img/ribadeando.jpg" alt="Impressions" />
+            <div class="overlay">
+              <div class="overlay-caption">
+                <h5 data-i18n="h5box1">Graphic Design</h5>
+                <p>Logo</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Photo 2 -->
+        <div class="col-lg-3 col-md-6 p-0 surroundingbox">
+          <a href="img/bild15.jpg" class="surroundingcontent" data-fancybox>
+            <img class="img-fluid" src="img/bild15.jpg" alt="Impressions" />
+            <div class="overlay">
+              <div class="overlay-caption">
+                <h5 data-i18n="h5box2">Graphic Design</h5>
+                <p>Tea Label</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Photo 3 -->
+        <div class="col-lg-3 col-md-6 p-0 surroundingbox">
+          <a href="img/kirbby.jpg" class="surroundingcontent" data-fancybox>
+            <img class="img-fluid" src="img/kirbby.jpg" alt="Impressions" />
+            <div class="overlay">
+              <div class="overlay-caption">
+                <h5 data-i18n="h5box3">Graphic Design</h5>
+                <p>Logo</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Photo 4 -->
+        <div class="col-lg-3 col-md-6 p-0 surroundingbox">
+          <a href="img/card.jpg" class="surroundingcontent" data-fancybox>
+            <img class="img-fluid" src="img/card.jpg" alt="Impressions" />
+            <div class="overlay">
+              <div class="overlay-caption">
+                <h5 data-i18n="h5box4">Graphic Design</h5>
+                <p>Business Card</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- Row 2 -->
+      <section class="row">
+        <!-- Photo 5 -->
+        <div class="col-lg-3 col-md-6 p-0 surroundingbox">
+          <a href="img/bild01.jpg" class="surroundingcontent" data-fancybox>
+            <img class="img-fluid" src="img/bild01.jpg" alt="Explosionsbox" />
+            <div class="overlay">
+              <div class="overlay-caption">
+                <h5 data-i18n="h5box5">Handicrafts</h5>
+                <p>Surprise Box</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Photo 6 -->
+        <div class="col-lg-3 col-md-6 p-0 surroundingbox">
+          <a href="img/bild02.jpg" class="surroundingcontent" data-fancybox>
+            <img class="img-fluid" src="img/bild02.jpg" alt="Impressions" />
+            <div class="overlay">
+              <div class="overlay-caption">
+                <h5 data-i18n="h5box6">Handicrafts</h5>
+                <p>Tiered Cake Stands</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Photo 7 -->
+        <div class="col-lg-3 col-md-6 p-0 surroundingbox">
+          <a href="img/bild03.jpg" class="surroundingcontent" data-fancybox>
+            <img class="img-fluid" src="img/bild03.jpg" alt="Costa da Mariña" />
+            <div class="overlay">
+              <div class="overlay-caption">
+                <h5 data-i18n="h5box7">Handicrafts</h5>
+                <p>Jewellery Box</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Photo 8 -->
+        <div class="col-lg-3 col-md-6 p-0 surroundingbox">
+          <a href="img/bild14.jpg" class="surroundingcontent" data-fancybox>
+            <img class="img-fluid" src="img/bild14.jpg" alt="Impressions" />
+            <div class="overlay">
+              <div class="overlay-caption">
+                <h5 data-i18n="h5box8">Handicrafts</h5>
+                <p>Ceramics</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- Fancybox End -->
+    </div>
+    <!--------------------------------------------------------------------------------
+    Contact ----------------------------------------------------------------------->
+    <div class="abschnitt contact" id="contact">
+      <section class="container">
+        <h1 data-i18n="h1contact" class="text-center">CONTACT</h1>
+        <p data-i18n="textcontact" class="text-center"></p>
+
+        <div class="conForm">
+          <section id="message">
+            <!-- Default form contact -->
+            <form
+              method="post"
+              class="text-center p-5"
+              action="https://formspree.io/f/mleoqlyl"
+            >
+              <input
+                placeholder="Name"
+                name="name"
+                type="text"
+                id="name"
+                class="form-control mb-4"
+                required
+              />
+
+              <!-- Email -->
+              <input
+                name="_replyto"
+                type="email"
+                id="email"
+                class="form-control mb-4"
+                placeholder="E-Mail"
+                required
+              />
+
+              <!-- Message -->
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  class="form-control rounded-0"
+                  id="comments"
+                  rows="5"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Send button -->
+              <button
+                class="btn mybutton"
+                type="submit"
+                id="submit"
+                value="Send"
+                data-i18n="contactbutton"
+              >
+                Send
+              </button>
+              <div id="simple-msg"></div>
+            </form>
+          </section>
+        </div>
+
+        <!-- Default form contact -->
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container justify-content-center align-items-center d-flex">
+        <span data-i18n="madewith">Made with</span><i class="fas fa-heart"></i>
+        <span>in Austria</span>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fancybox Script -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Own JS -->
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.min.js" defer></script>
+    <script src="js/translator.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
